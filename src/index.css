@@ -1,3 +1,9 @@
+:root {
+  --rojo-oscuro: #350002;
+  --rojo-claro: #e71c15;
+  --crema-clara: #9a8478;
+  --crema-oscura: #1e130c;
+}
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -6,22 +12,24 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
+.bg-brown {
+  background: var(--crema-oscura);  
+  background: -webkit-linear-gradient(to right, var(--crema-oscura), var(--crema-clara), var(--crema-oscura));  
+  background: linear-gradient(to right, var(--crema-oscura), var(--crema-clara), var(--crema-oscura)); 
+}
+.bg-red {
+  background: var(--rojo-claro);
+  background: -webkit-linear-gradient(to right, var(--rojo-oscuro), var(--rojo-claro), var(--rojo-oscuro));
+  background: linear-gradient(to right, var(--rojo-oscuro), var(--rojo-claro), var(--rojo-oscuro));
+}
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
-}
-:root {
-  --rojo-oscuro: #350002;
-  --rojo-claro: #e71c15;
 }
 header {
   text-align: center;
   color: #ffffff;
   font-weight: bold;
-  background: var(--rojo-claro);
-  background: -webkit-linear-gradient(to right, var(--rojo-oscuro), var(--rojo-claro), var(--rojo-oscuro));
-  background: linear-gradient(to right, var(--rojo-oscuro), var(--rojo-claro), var(--rojo-oscuro));
 }
 .division-white {
   height: 3px;
