@@ -1,15 +1,10 @@
-import { Component, Fragment } from "react";
-
-import Index from "./components/index";
-import Header from "./components/header";
+import { Component } from "react";
+import Router from "./router/router";
 
 class App extends Component {
   render() {
     return (
-      <Fragment>
-        <Header />
-        <Index />
-      </Fragment>
+      <Router />
     )
   }
 }

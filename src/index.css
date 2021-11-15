@@ -3,6 +3,8 @@
   --rojo-claro: #e71c15;
   --crema-clara: #9a8478;
   --crema-oscura: #1e130c;
+  --negro: rgb(8, 8, 8);
+  --gris-negro: rgb(36, 36, 36);
 }
 body {
   margin: 0;
@@ -21,6 +23,11 @@ body {
   background: var(--rojo-claro);
   background: -webkit-linear-gradient(to right, var(--rojo-oscuro), var(--rojo-claro), var(--rojo-oscuro));
   background: linear-gradient(to right, var(--rojo-oscuro), var(--rojo-claro), var(--rojo-oscuro));
+}
+.bg-black {
+  background: var(--gris-negro);
+  background: -webkit-linear-gradient(to right, var(--negro), var(--gris-negro), var(--negro));
+  background: linear-gradient(to right, var(--negro), var(--gris-negro), var(--negro));
 }
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',

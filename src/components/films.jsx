@@ -2,10 +2,9 @@ import { Component, Fragment } from "react";
 import Layout from "./layout";
 import { getAllMarvelProducts } from "./helpers/functions";
 
-class Index extends Component {
+class Films extends Component {
     state = {
-        films: [],
-        series: []
+        films: []
     }
     getAllMarvelProducts = () => {
         let movies = getAllMarvelProducts('movie')
@@ -28,4 +27,4 @@ class Index extends Component {
     }
 }
 
-export default Index;
+export default Films;
