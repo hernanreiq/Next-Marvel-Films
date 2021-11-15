@@ -1,25 +1,25 @@
 import { Component } from "react";
 import { Card, Badge } from "react-bootstrap";
+import { calDaysBetweenDates } from "./helpers/functions";
 
 class ProductDetails extends Component {
     render() {
+        const { release_date, overview } = this.props.product;
         return (
             <Card className="shadow">
                 <Card.Header className="bg-red">
                     <h3 className="text-center text-white mb-0">
-                        Marvel: SERIE O PELICULA
+                        Details
                     </h3>
                 </Card.Header>
                 <Card.Body className="text-center">
-                    <p className="h2">
-                        Fecha de estreno
-                    </p>
                     <p className="h3">
-                        Faltan
-                        <Badge variant="primary" pill className="mx-1">33</Badge>
-                        días para el estreno
+                        Release in <Badge variant="primary" pill>{calDaysBetweenDates(release_date)}</Badge> days.
                     </p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut at cumque nesciunt ipsum assumenda vitae laborum inventore officiis quia, atque, accusantium cupiditate! Nesciunt dicta eos molestias nihil ut totam rerum.</p>
+                    <p className="h2">
+                        Release date: <Badge variant="primary" pill>{release_date}</Badge>
+                    </p>
+                    <p>{overview}</p>
                 </Card.Body>
             </Card>
         )
