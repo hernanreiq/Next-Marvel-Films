@@ -11,3 +11,21 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+:root {
+  --rojo-oscuro: #350002;
+  --rojo-claro: #e71c15;
+}
+header {
+  text-align: center;
+  color: #ffffff;
+  font-weight: bold;
+  background: var(--rojo-claro);
+  background: -webkit-linear-gradient(to right, var(--rojo-oscuro), var(--rojo-claro), var(--rojo-oscuro));
+  background: linear-gradient(to right, var(--rojo-oscuro), var(--rojo-claro), var(--rojo-oscuro));
+}
+.division-white {
+  height: 3px;
+  background: #ffffff;
+  background: -webkit-linear-gradient(to right, var(--rojo-oscuro), #ffffff, var(--rojo-oscuro));
+  background: linear-gradient(to right, var(--rojo-oscuro), #ffffff, var(--rojo-oscuro));
+}
