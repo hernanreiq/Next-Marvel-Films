@@ -1,4 +1,5 @@
 import { Component } from "react";
+import LogoTMDB from "../copyright/tmdb.svg";
 
 class Footer extends Component {
     render() {
@@ -7,7 +8,7 @@ class Footer extends Component {
                 <div className="row">
                     <div className="col-1">
                         <a href="https://www.themoviedb.org/" target="_blank" rel="noreferrer">
-                            <img src="/copyright/tmdb.svg" alt="Copyright" />
+                            <img src={LogoTMDB} alt="Copyright" />
                         </a>
                     </div>
                     <div className="col-11">
