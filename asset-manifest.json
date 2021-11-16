@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/Next-Marvel-Films/static/css/main.6a2eee55.chunk.css",
+    "main.js": "/Next-Marvel-Films/static/js/main.fb0c9dcb.chunk.js",
+    "main.js.map": "/Next-Marvel-Films/static/js/main.fb0c9dcb.chunk.js.map",
+    "runtime-main.js": "/Next-Marvel-Films/static/js/runtime-main.273869b1.js",
+    "runtime-main.js.map": "/Next-Marvel-Films/static/js/runtime-main.273869b1.js.map",
+    "static/css/2.bd932d36.chunk.css": "/Next-Marvel-Films/static/css/2.bd932d36.chunk.css",
+    "static/js/2.7ea66718.chunk.js": "/Next-Marvel-Films/static/js/2.7ea66718.chunk.js",
+    "static/js/2.7ea66718.chunk.js.map": "/Next-Marvel-Films/static/js/2.7ea66718.chunk.js.map",
+    "static/js/3.8e449243.chunk.js": "/Next-Marvel-Films/static/js/3.8e449243.chunk.js",
+    "static/js/3.8e449243.chunk.js.map": "/Next-Marvel-Films/static/js/3.8e449243.chunk.js.map",
+    "index.html": "/Next-Marvel-Films/index.html",
+    "static/css/2.bd932d36.chunk.css.map": "/Next-Marvel-Films/static/css/2.bd932d36.chunk.css.map",
+    "static/css/main.6a2eee55.chunk.css.map": "/Next-Marvel-Films/static/css/main.6a2eee55.chunk.css.map",
+    "static/js/2.7ea66718.chunk.js.LICENSE.txt": "/Next-Marvel-Films/static/js/2.7ea66718.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.273869b1.js",
+    "static/css/2.bd932d36.chunk.css",
+    "static/js/2.7ea66718.chunk.js",
+    "static/css/main.6a2eee55.chunk.css",
+    "static/js/main.fb0c9dcb.chunk.js"
+  ]
+}
