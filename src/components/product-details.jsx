@@ -4,7 +4,7 @@ import { calDaysBetweenDates } from "./helpers/functions";
 
 class ProductDetails extends Component {
     render() {
-        const { release_date, overview } = this.props.product;
+        const { release_date, overview, first_air_date } = this.props.product;
         return (
             <Card className="shadow">
                 <Card.Header className="bg-red">
@@ -14,10 +14,10 @@ class ProductDetails extends Component {
                 </Card.Header>
                 <Card.Body className="text-center">
                     <p className="h3">
-                        Release in <Badge variant="primary" pill>{calDaysBetweenDates(release_date)}</Badge> days.
+                        Release in <Badge variant="primary" pill>{calDaysBetweenDates(release_date ? release_date : first_air_date)}</Badge> days.
                     </p>
                     <p className="h2">
-                        Release date: <Badge variant="primary" pill>{release_date}</Badge>
+                        Release date: <Badge variant="primary" pill>{release_date ? release_date : first_air_date}</Badge>
                     </p>
                     <p>{overview}</p>
                 </Card.Body>

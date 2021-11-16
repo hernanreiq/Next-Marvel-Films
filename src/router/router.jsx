@@ -1,6 +1,6 @@
 import { Component } from "react";
-import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
-import Films from "../components/films";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Index from "../components/index";
 import Header from "../components/header";
 import Navbar from "../components/navbar";
 
@@ -11,9 +11,9 @@ class Router extends Component {
                 <Header />
                 <Navbar />
                 <Routes>
-                    <Route exact path="/Next-Marvel-Films/movie" element={<Films/>} />
-                    <Route exact path="/Next-Marvel-Films/tv" element={<Navbar/>} />
-                    <Route path="/Next-Marvel-Films/*" element={<Films/>} />
+                    <Route exact path="/Next-Marvel-Films/movie" element={<Index product="movie" />} />
+                    <Route exact path="/Next-Marvel-Films/tv" element={<Index product="tv" />} />
+                    <Route path="/Next-Marvel-Films/*" element={<Index product="movie"/>} />
                 </Routes>
             </BrowserRouter>
         )
