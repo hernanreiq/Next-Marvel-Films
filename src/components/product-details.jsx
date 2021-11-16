@@ -12,14 +12,14 @@ class ProductDetails extends Component {
                         Details
                     </h3>
                 </Card.Header>
-                <Card.Body className="text-center">
+                <Card.Body className="text-center bg-black text-white">
                     <p className="h3">
                         Release in <Badge variant="primary" pill>{calDaysBetweenDates(release_date ? release_date : first_air_date)}</Badge> days.
                     </p>
                     <p className="h2">
                         Release date: <Badge variant="primary" pill>{release_date ? release_date : first_air_date}</Badge>
                     </p>
-                    <p>{overview}</p>
+                    <p className="mb-0">{overview}</p>
                 </Card.Body>
             </Card>
         )
